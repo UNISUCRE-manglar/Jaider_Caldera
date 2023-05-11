@@ -3,7 +3,7 @@ import { Router } from "express";
 const router = Router();
 
 router.get("/", (req, res) => {
-  res.render("index", { title: "MANGLAR - First Web Node" });
+  res.render("index", { title: "MANGLAR - First Web Node " });
 });
 
 router.get("/about", (req, res) => {
@@ -14,5 +14,7 @@ router.get("/contact", (req, res) => {
   res.render("contact", { title: "Contact Page" });
 });
 
-
+router.get("/charts", (req, res) => {
+  res.render("charts", { title: "charts page" });
+});
 export default router;
